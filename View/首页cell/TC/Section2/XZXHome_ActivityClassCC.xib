@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XZXHome_ActivityClassCC">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="178" height="88"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSP-wF-vNg">
+                        <rect key="frame" x="0.0" y="52" width="178" height="17.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RUr-hP-7TG">
+                        <rect key="frame" x="78" y="5" width="22" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RUr-hP-7TG" secondAttribute="height" multiplier="0.5:1" id="14O-0z-TTS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="FSP-wF-vNg" firstAttribute="top" secondItem="RUr-hP-7TG" secondAttribute="bottom" constant="3" id="0qD-50-hpQ"/>
+                <constraint firstItem="FSP-wF-vNg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="299-SK-Vdt"/>
+                <constraint firstAttribute="trailing" secondItem="FSP-wF-vNg" secondAttribute="trailing" id="2n7-fJ-IUp"/>
+                <constraint firstItem="RUr-hP-7TG" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="P2B-eP-Qwv"/>
+                <constraint firstItem="FSP-wF-vNg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="aMf-zc-bKk"/>
+                <constraint firstItem="RUr-hP-7TG" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.5" id="cZK-2l-ZS0"/>
+                <constraint firstItem="RUr-hP-7TG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="qK6-AL-el5"/>
+                <constraint firstItem="FSP-wF-vNg" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.2" id="yIG-0O-qyO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="178" height="88"/>
+            <connections>
+                <outlet property="HeadImage" destination="RUr-hP-7TG" id="3G1-RW-8mX"/>
+                <outlet property="title" destination="FSP-wF-vNg" id="0FI-RZ-e8e"/>
+            </connections>
+            <point key="canvasLocation" x="-49.600000000000001" y="65.667166416791616"/>
+        </collectionViewCell>
+    </objects>
+</document>

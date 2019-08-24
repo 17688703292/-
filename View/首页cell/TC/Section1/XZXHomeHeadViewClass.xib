@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XZXHomeHeadViewClass">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQ1-xW-WIU">
+                    <rect key="frame" x="311.5" y="0.0" width="63.5" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.18039215689999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="MoreClass_Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="egu-ZT-gBi"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq3-KA-7G2">
+                    <rect key="frame" x="310.5" y="13" width="1" height="18"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="JA8-2h-Eqj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lgs-6A-cEb">
+                    <rect key="frame" x="0.0" y="0.0" width="310.5" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.18039215689999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YnS-DC-yg6">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="C8J-wd-Wbt"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="q7I-Av-v1T"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lgs-6A-cEb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4pF-Ja-HOK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lgs-6A-cEb" secondAttribute="bottom" id="CNf-FK-mbY"/>
+                <constraint firstItem="BQ1-xW-WIU" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.17" id="FaO-r6-ysn"/>
+                <constraint firstItem="aq3-KA-7G2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Gh9-Ug-L7x"/>
+                <constraint firstItem="lgs-6A-cEb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HQF-wG-N2C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="BQ1-xW-WIU" secondAttribute="bottom" id="I0W-0X-qWE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BQ1-xW-WIU" secondAttribute="trailing" id="OVe-Bl-vCa"/>
+                <constraint firstItem="BQ1-xW-WIU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XLL-xz-OW9"/>
+                <constraint firstItem="aq3-KA-7G2" firstAttribute="leading" secondItem="lgs-6A-cEb" secondAttribute="trailing" id="hJO-RQ-xAK"/>
+                <constraint firstItem="BQ1-xW-WIU" firstAttribute="leading" secondItem="aq3-KA-7G2" secondAttribute="trailing" id="tQe-J3-vSa"/>
+                <constraint firstItem="aq3-KA-7G2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.4" id="whp-R6-DdL"/>
+                <constraint firstItem="BQ1-xW-WIU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yGa-Mh-3re"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="CustomerCollecell" destination="lgs-6A-cEb" id="vgU-GB-nzT"/>
+                <outlet property="MoreClassBtn" destination="BQ1-xW-WIU" id="nZs-kc-R7C"/>
+            </connections>
+            <point key="canvasLocation" x="112.8" y="48.575712143928037"/>
+        </view>
+    </objects>
+</document>

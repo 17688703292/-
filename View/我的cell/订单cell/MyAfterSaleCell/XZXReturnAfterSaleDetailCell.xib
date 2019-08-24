@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="XZXReturnAfterSaleDetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6u-eE-fqf">
+                        <rect key="frame" x="230" y="6.5" width="80" height="30.5"/>
+                        <state key="normal" title="修改申请">
+                            <color key="titleColor" red="1" green="0.18039215689999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="EditApplication_Action:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kGl-KV-L0V"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bii-q0-qnS">
+                        <rect key="frame" x="140" y="6.5" width="80" height="30.5"/>
+                        <state key="normal" title="撤销申请">
+                            <color key="titleColor" red="1" green="0.18039215689999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="CancelApplication_Action:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="djt-PH-C4w"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v6u-eE-fqf" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.7" id="Cd2-BY-cOH"/>
+                    <constraint firstItem="Bii-q0-qnS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NEW-15-xGa"/>
+                    <constraint firstItem="Bii-q0-qnS" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="Ss4-AT-OwI"/>
+                    <constraint firstItem="v6u-eE-fqf" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="cDq-3v-y6T"/>
+                    <constraint firstAttribute="trailing" secondItem="v6u-eE-fqf" secondAttribute="trailing" constant="10" id="dA4-dr-KaU"/>
+                    <constraint firstItem="Bii-q0-qnS" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.7" id="du2-nz-caV"/>
+                    <constraint firstItem="v6u-eE-fqf" firstAttribute="leading" secondItem="Bii-q0-qnS" secondAttribute="trailing" constant="10" id="lzg-Yu-UlL"/>
+                    <constraint firstItem="v6u-eE-fqf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nfI-jv-zQh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="CancelApplication" destination="Bii-q0-qnS" id="NzQ-h7-0nW"/>
+                <outlet property="EditApplication" destination="v6u-eE-fqf" id="O7o-Me-CG8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

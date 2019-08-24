@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shop Car ListVC-->
+        <scene sceneID="nVX-Rp-uJJ">
+            <objects>
+                <viewController storyboardIdentifier="XZXShopCarListVCID" id="Mt1-dG-TmD" customClass="XZXShopCarListVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FIe-K0-TGW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNa-Zp-lEE">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-4u-Tby">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
+                                        <state key="normal" title="全选" image="weixuanzhong">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="selected" image="xuanzhong"/>
+                                        <connections>
+                                            <action selector="AllSelect_Action:" destination="Mt1-dG-TmD" eventType="touchUpInside" id="ZWc-QW-nki"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：¥ 699" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAn-wP-Vs7">
+                                        <rect key="frame" x="94" y="0.0" width="187.5" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbB-HJ-DQ4">
+                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="50"/>
+                                        <state key="normal" title="结算">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Sure_Action:" destination="Mt1-dG-TmD" eventType="touchUpInside" id="Z2h-Nz-1CX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fbB-HJ-DQ4" firstAttribute="width" secondItem="CNa-Zp-lEE" secondAttribute="width" multiplier="0.25" id="9KZ-SV-nwd"/>
+                                    <constraint firstItem="hbr-4u-Tby" firstAttribute="width" secondItem="CNa-Zp-lEE" secondAttribute="width" multiplier="0.25" id="H0W-Yb-Rfu"/>
+                                    <constraint firstAttribute="trailing" secondItem="fbB-HJ-DQ4" secondAttribute="trailing" id="MWe-eD-Pi7"/>
+                                    <constraint firstAttribute="height" constant="50" id="QTa-qd-3kJ"/>
+                                    <constraint firstItem="hbr-4u-Tby" firstAttribute="leading" secondItem="CNa-Zp-lEE" secondAttribute="leading" id="R3U-xv-gyN"/>
+                                    <constraint firstItem="uAn-wP-Vs7" firstAttribute="leading" secondItem="hbr-4u-Tby" secondAttribute="trailing" id="R5o-6f-BAd"/>
+                                    <constraint firstItem="fbB-HJ-DQ4" firstAttribute="centerY" secondItem="CNa-Zp-lEE" secondAttribute="centerY" id="b7a-Ue-LBS"/>
+                                    <constraint firstItem="hbr-4u-Tby" firstAttribute="centerY" secondItem="CNa-Zp-lEE" secondAttribute="centerY" id="gP3-AG-50R"/>
+                                    <constraint firstItem="fbB-HJ-DQ4" firstAttribute="height" secondItem="CNa-Zp-lEE" secondAttribute="height" id="iFK-P7-umk"/>
+                                    <constraint firstItem="fbB-HJ-DQ4" firstAttribute="leading" secondItem="uAn-wP-Vs7" secondAttribute="trailing" id="kwy-MN-lcc"/>
+                                    <constraint firstItem="hbr-4u-Tby" firstAttribute="height" secondItem="CNa-Zp-lEE" secondAttribute="height" id="lSP-l4-vzX"/>
+                                    <constraint firstItem="uAn-wP-Vs7" firstAttribute="top" secondItem="CNa-Zp-lEE" secondAttribute="top" id="uy2-vK-XMn"/>
+                                    <constraint firstAttribute="bottom" secondItem="uAn-wP-Vs7" secondAttribute="bottom" id="xRf-JX-lzx"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="BWA-cr-kTk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BWA-cr-kTk" firstAttribute="top" secondItem="4Gh-7Y-xp8" secondAttribute="top" id="5NG-Vn-au8"/>
+                            <constraint firstItem="BWA-cr-kTk" firstAttribute="leading" secondItem="4Gh-7Y-xp8" secondAttribute="leading" id="6dS-bp-Gt2"/>
+                            <constraint firstItem="CNa-Zp-lEE" firstAttribute="top" secondItem="BWA-cr-kTk" secondAttribute="bottom" id="8S1-kw-MfK"/>
+                            <constraint firstItem="4Gh-7Y-xp8" firstAttribute="trailing" secondItem="BWA-cr-kTk" secondAttribute="trailing" id="QXm-j2-PfQ"/>
+                            <constraint firstItem="4Gh-7Y-xp8" firstAttribute="trailing" secondItem="CNa-Zp-lEE" secondAttribute="trailing" id="WTc-Fl-u6Y"/>
+                            <constraint firstItem="CNa-Zp-lEE" firstAttribute="leading" secondItem="4Gh-7Y-xp8" secondAttribute="leading" id="kax-PY-cON"/>
+                            <constraint firstItem="4Gh-7Y-xp8" firstAttribute="bottom" secondItem="CNa-Zp-lEE" secondAttribute="bottom" id="nhx-My-sJq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Gh-7Y-xp8"/>
+                    </view>
+                    <connections>
+                        <outlet property="AllSelectBtn" destination="hbr-4u-Tby" id="T5u-0c-Hw3"/>
+                        <outlet property="CustomerTableView" destination="BWA-cr-kTk" id="JZl-5z-N5V"/>
+                        <outlet property="SumPrice" destination="uAn-wP-Vs7" id="qWe-dg-HQ8"/>
+                        <outlet property="SureBtn" destination="fbB-HJ-DQ4" id="GCU-mI-jkq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LjE-HJ-Gx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.80000000000001" y="84.107946026986511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="weixuanzhong" width="15" height="15"/>
+        <image name="xuanzhong" width="15" height="15"/>
+    </resources>
+</document>

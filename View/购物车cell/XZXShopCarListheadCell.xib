@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="XZXShopCarListheadCellID" id="iN0-l3-epB" customClass="XZXShopCarListheadCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dianpu" translatesAutoresizingMaskIntoConstraints="NO" id="i8J-IL-kvQ">
+                    <rect key="frame" x="50" y="3" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="i8J-IL-kvQ" secondAttribute="height" multiplier="1:1" id="jzD-FX-Jg6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boY-SM-E2f">
+                    <rect key="frame" x="74" y="15" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4W-z0-7U2">
+                    <rect key="frame" x="365" y="15" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hS9-Ds-mDh">
+                    <rect key="frame" x="10" y="0.0" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hS9-Ds-mDh" secondAttribute="height" multiplier="1:1" id="SLJ-Hl-Xty"/>
+                    </constraints>
+                    <state key="normal" image="weixuanzhong"/>
+                    <state key="highlighted" image="xuanzhong"/>
+                    <connections>
+                        <action selector="Select_Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="mjK-0d-v3t"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="boY-SM-E2f" firstAttribute="leading" secondItem="i8J-IL-kvQ" secondAttribute="trailing" id="163-Is-Jwn"/>
+                <constraint firstItem="i8J-IL-kvQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1CF-NV-z3d"/>
+                <constraint firstItem="hS9-Ds-mDh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="635-gn-aV3"/>
+                <constraint firstItem="Z4W-z0-7U2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="boY-SM-E2f" secondAttribute="trailing" constant="10" id="Ayd-5M-DN4"/>
+                <constraint firstItem="Z4W-z0-7U2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GkD-ST-Hyp"/>
+                <constraint firstItem="i8J-IL-kvQ" firstAttribute="leading" secondItem="hS9-Ds-mDh" secondAttribute="trailing" constant="10" id="Ha0-Vh-gQm"/>
+                <constraint firstItem="hS9-Ds-mDh" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="eTz-mN-kNm"/>
+                <constraint firstItem="hS9-Ds-mDh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="gfG-bW-QnH"/>
+                <constraint firstItem="boY-SM-E2f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="njl-ll-4LH"/>
+                <constraint firstItem="i8J-IL-kvQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.8" id="pF6-dY-gVm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Z4W-z0-7U2" secondAttribute="trailing" constant="10" id="qIc-lq-VS3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="SelectBtn" destination="hS9-Ds-mDh" id="tWX-23-KEJ"/>
+                <outlet property="statuContent" destination="Z4W-z0-7U2" id="TKU-dl-NZC"/>
+                <outlet property="storeName" destination="boY-SM-E2f" id="Xbv-AS-VPV"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="153.82308845577214"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dianpu" width="14" height="14"/>
+        <image name="weixuanzhong" width="15" height="15"/>
+        <image name="xuanzhong" width="15" height="15"/>
+    </resources>
+</document>
